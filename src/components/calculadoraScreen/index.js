@@ -15,11 +15,14 @@ const BananaAzul = ({ navigation }) => {
       Alert.alert('Erro', 'Por favor, preencha todos os campos.');
     }
   };
-  
 
   const handleCalculateReturn = () => {
     calculateReturn();
-    navigation.navigate('ReturnScreen');
+    navigation.navigate('Resultado', {
+      investimento: initialPrice,
+      retorno: finalPrice,
+      roi: returnAmount,
+    });
   };
 
   return (
@@ -80,4 +83,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default BananaAzul ;
+export default BananaAzul;

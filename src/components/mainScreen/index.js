@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Image } from 'react-native';
 
-const Principal = ({ navigation }) => {
+const Jaca = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Calculadora de ROI</Text>
@@ -11,7 +11,7 @@ const Principal = ({ navigation }) => {
       <Image source={require('../../../assets/investimento.png')} style={styles.image} />
       <TouchableOpacity
         style={styles.button}
-        onPress={() => navigation.navigate('CalculatorScreen')}
+        onPress={() => navigation.navigate('Calculadora')}
       >
         <Text style={styles.buttonText}>Vamos Calcular?</Text>
       </TouchableOpacity>
@@ -63,4 +63,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default Principal;
+export default Jaca;
